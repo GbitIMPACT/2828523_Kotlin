@@ -5,9 +5,10 @@ Este proyecto consiste en un sistema para la gestión académica diseñado para 
 
 La aplicación contiene datos de prueba con los cuales se puede probar el funcionamiento de la aplicación, estos se almacenaron de esta manera para facilitar la navegacion por la aplicacion, ya que de momento no es posible registrar un nuevo profesor, se debe realizar manualmente.
 
-    Profesor: 
+Profesor:
 Codigo instructor: 12345
 Contraseña: 12345
+
 
 Asimismo cuenta con cursos de prueba, los cuales se pueden ver en la aplicacion.
 
@@ -104,6 +105,7 @@ Durante el desarrollo de la aplicacion se utilizaron las siguientes bibliotecas 
     DataStore: Para almacenar preferencias de usuario de forma asíncrona
 
 Para el apartado de UI:
+
         ViewModel: Para gestión de datos UI-related
         LiveData: Para datos observables
         Navigation Component: Para navegación entre pantallas
@@ -224,7 +226,7 @@ La aplicación mantiene una copia local de los datos con las siguientes entidade
 
 🔄 Flujo de Funcionamiento
 1. Autenticación:
-
+   
     El usuario (estudiante/profesor) inicia sesión
     La API valida las credenciales
     Se genera un JWT token
@@ -243,7 +245,7 @@ La aplicación mantiene una copia local de los datos con las siguientes entidade
     Success: Cuando la operación es exitosa
     Error: Cuando ocurre un error (con mensaje descriptivo)
 
-🚦 Endpoints de la API
+## 🚦 Endpoints de la API
 Autenticación:
 
     POST /api/auth/register - Registro de estudiantes
