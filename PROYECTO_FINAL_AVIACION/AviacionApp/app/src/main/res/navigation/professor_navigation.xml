@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/professor_navigation"
+    app:startDestination="@id/navigation_students">
+
+    <fragment
+        android:id="@+id/navigation_students"
+        android:name="com.example.aviacionapp.presentation.professor.students.StudentsFragment"
+        android:label="Estudiantes" />
+
+    <fragment
+        android:id="@+id/navigation_courses_professor"
+        android:name="com.example.aviacionapp.presentation.professor.courses.ProfessorCoursesFragment"
+        android:label="Cursos" />
+
+    <!-- Agregar StudentDetailFragment -->
+    <fragment
+        android:id="@+id/navigation_student_detail"
+        android:name="com.example.aviacionapp.presentation.professor.students.StudentDetailFragment"
+        android:label="Detalle del Estudiante">
+        <argument
+            android:name="student_id"
+            app:argType="integer" />
+    </fragment>
+
+    <!-- Agregar CourseStudentsFragment -->
+    <fragment
+        android:id="@+id/navigation_course_students"
+        android:name="com.example.aviacionapp.presentation.professor.courses.CourseStudentsFragment"
+        android:label="Estudiantes del Curso">
+        <argument
+            android:name="course_id"
+            app:argType="integer" />
+        <argument
+            android:name="course_name"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

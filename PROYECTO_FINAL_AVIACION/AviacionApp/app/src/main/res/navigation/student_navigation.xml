@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/student_navigation"
+    app:startDestination="@id/navigation_courses">
+
+    <fragment
+        android:id="@+id/navigation_courses"
+        android:name="com.example.aviacionapp.presentation.student.courses.CoursesFragment"
+        android:label="Cursos Disponibles" />
+
+    <fragment
+        android:id="@+id/navigation_my_courses"
+        android:name="com.example.aviacionapp.presentation.student.courses.MyCoursesFragment"
+        android:label="Mis Cursos" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.aviacionapp.presentation.student.profile.ProfileFragment"
+        android:label="Mi Perfil" />
+
+</navigation>
